@@ -1,0 +1,34 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-ene-2015, 10:40:56
+    Author     : nelson
+*/
+
+/* En escritorio reseteamos el max-height y lo posicionamos relativamente */
+@media only screen and (min-width: 37.5em){
+.navigation{
+  max-height: inherit; 
+  position: relative;
+  right: inherit; //anulamos su posición fuera de la pantalla
+  width: auto; //le damos todo el ancho que necesite
+  background: transparent;
+}
+}
+
+@media only screen and (min-width: 37.5em){
+.navigation li{
+  display: inline-block; //los elementos van en línea
+}
+}
+
+/* Ocultamos el enlace en pantallas anchas */
+@media only screen and (min-width: 37.5em){
+  .navigation-toggle{
+    width: 0;
+    height: 0;
+  }
+}
